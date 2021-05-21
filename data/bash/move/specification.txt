@@ -1,0 +1,1 @@
+create a directory songs and move all files with ending mp3 there

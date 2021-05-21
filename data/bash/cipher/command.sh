@@ -1,0 +1,1 @@
+tr '[X-ZA-W]' '[A-Z]' < cipher.txt > plain.txt

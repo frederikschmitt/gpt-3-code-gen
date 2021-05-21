@@ -1,0 +1,1 @@
+copy directory data to remote server example.com

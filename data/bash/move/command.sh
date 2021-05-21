@@ -1,0 +1,1 @@
+mkdir songs && mv *.mp3 songs

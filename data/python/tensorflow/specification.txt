@@ -1,0 +1,1 @@
+train and evaluate an MLP with a single hidden layer of 128 neurons, dropout of 0.2 and ReLU activation on the MNIST dataset

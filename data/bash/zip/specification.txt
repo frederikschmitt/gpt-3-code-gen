@@ -1,0 +1,1 @@
+compress directory assignment into the gzipped archive file submission.tar.gz

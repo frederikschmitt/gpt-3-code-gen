@@ -1,0 +1,1 @@
+convert photo.jpg photo.png

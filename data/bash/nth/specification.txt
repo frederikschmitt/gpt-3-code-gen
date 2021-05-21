@@ -1,0 +1,1 @@
+write every second line of file input.txt to file output.txt

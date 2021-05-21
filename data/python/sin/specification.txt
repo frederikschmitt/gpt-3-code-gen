@@ -1,0 +1,1 @@
+plot the sine function in interval 0 to 4 pi using a random color

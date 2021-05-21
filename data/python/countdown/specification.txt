@@ -1,0 +1,1 @@
+countdown that starts at 10 seconds and cheers at the end

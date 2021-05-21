@@ -1,0 +1,1 @@
+grep -o -i apple groceries.txt | wc -l

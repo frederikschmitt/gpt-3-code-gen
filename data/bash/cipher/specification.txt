@@ -1,0 +1,1 @@
+replace every capital letter in file cipher.txt by the letter three positions down in the alphabet and write the result to plain.txt
