@@ -1,1 +1,1 @@
-count all occurrences of word "apple" in file groceries.txt
+count all occurrences of the word "apple" in file groceries.txt

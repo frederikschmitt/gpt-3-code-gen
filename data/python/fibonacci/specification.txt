@@ -1,1 +1,1 @@
-compute the n-th fibonacci number
+compute the n-th Fibonacci number
