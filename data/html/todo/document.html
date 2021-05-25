@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <h1>To Do List</h1>
+        <input type="text" id="input-field" placeholder="Enter To Do">
+        <button onclick="addToDo()">Add</button>
+        <ul id="to-do-list"></ul>
+        <script>
+            function addToDo() {
+                var listElement = document.createElement("li");
+                var inputValue = document.getElementById("input-field").value;
+                document.getElementById("input-field").value = "";
+                var textNode = document.createTextNode(inputValue)
+                listElement.appendChild(textNode);
+                document.getElementById("to-do-list").appendChild(listElement)
+            }
+        </script>
+    </body>
+</html>

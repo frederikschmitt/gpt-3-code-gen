@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stopwatch</title>
+    </head> 
+    <body>
+        <h1>Stopwatch</h1>
+        <div id="stopwatch">00:00:00</div>
+        <button onclick="startWatch()">Start</button>
+        <button onclick="stopWatch()">Stop</button>
+        <button onclick="resetWatch()">Reset</button>
+        <script>
+            let elapsed = 0;
+            let timer;
+            function startWatch() {
+                timer = setInterval(() => {
+                    elapsed += 10
+                    mils = elapsed % 1000 / 10 | 0;
+                    secs = elapsed % (1000 * 60) / 1000 | 0;
+                    mins = elapsed % (1000 * 60 * 60) / (1000 * 60) | 0;
+                    mils = mils < 10 ? "0" + mils : mils;
+                    secs = secs < 10 ? "0" + secs : secs;
+                    mins = mins < 10 ? "0" +  mins : mins;
+                    document.getElementById("stopwatch").innerHTML = mins + ":" + secs + ":" + mils;
+                }, 10)
+            }
+            function stopWatch() {
+                clearInterval(timer);
+            }
+            function resetWatch() {
+                setInterval(timer)
+                elapsed = 0
+                document.getElementById("stopwatch").innerHTML = "00:00:00"
+            }
+        </script>
+    </body>
+</html>

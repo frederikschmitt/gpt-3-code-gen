@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RGB Buttons</title>
+        <style>
+            .button {
+                color: white;
+                font-size: 16px;
+            }
+            .red-button {background-color: red;}
+            .green-button {background-color: green;}
+            .blue-button {background-color: blue;}
+        </style>
+    </head>
+    <body>
+        <h1>RGB Buttons</h1>
+        <button class="button red-button" onclick="backgroundColor('red')">Red</button>
+        <button class="button green-button" onclick="backgroundColor('green')">Green</button>
+        <button class="button blue-button" onclick="backgroundColor('blue')">Blue</button>
+        <script>
+            function backgroundColor(color) {
+                document.body.style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+red button, green button, and blue button that change the background color of the page accordingly

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Unit Converter</title>
+    </head>
+    <body>
+        <h1>Temperature Unit Converter</h1>
+        <div>
+            <input type="number" min="-273.15" id="celsius-input" value="0"> &#xb0;C
+        </div>
+        <div>
+            <input type="number" min="-459.67" id="fahrenheit-input" value="32"> &#xb0;F
+        </div>
+        <script>
+            document.getElementById("celsius-input").addEventListener("input", convertCelsius);
+            document.getElementById("fahrenheit-input").addEventListener("input", convertFahrenheit);
+            function convertCelsius() {
+                let c = document.getElementById("celsius-input").value;
+                let f = parseFloat(c) * 9/5 + 32;
+                f = f.toFixed(2);
+                document.getElementById("fahrenheit-input").value = f;
+            }
+            function convertFahrenheit() {
+                let f = document.getElementById("fahrenheit-input").value;
+                let c = (parseFloat(f) - 32) * 5/9;
+                c = c.toFixed(2);
+                document.getElementById("celsius-input").value = c;
+            }
+        </script>
+    </body>
+</html>
